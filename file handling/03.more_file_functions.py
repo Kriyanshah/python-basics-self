@@ -17,7 +17,7 @@ print(line5, type(line5)) # Print the data and its type"""
 
                        # OR
 
-line = f.readline() # Read the data of the file line by line
+line = f.readline() # Read the data of the file line by line    
 while(line != ""):
     print(line, end="") # Print the data and its type
     line = f.readline() # Read the data of the file line by line
