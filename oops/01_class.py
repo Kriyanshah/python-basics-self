@@ -1,6 +1,12 @@
 class employee:
-    name = "kriyan"
     language = "py"
-    salary = 0
+    salary = 12000
+
 kriyan = employee()
-print(kriyan.name, kriyan.language)
+kriyan.name = "Kriyan" # this is an instance attribute
+print(kriyan.name, kriyan.language, kriyan.salary)
+
+rohan = employee()
+rohan.name = "Rohan Roronoa zoro" # this is an instance attribute
+
+print(rohan.name, rohan.language, rohan.salary)
