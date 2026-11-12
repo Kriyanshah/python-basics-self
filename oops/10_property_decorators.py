@@ -1,0 +1,20 @@
+class employee:
+    a = 1
+    @classmethod  # Decorator
+    def show(cls):
+        print(f"the class attribute is: {cls.a}")
+
+    @property 
+    def name(self):
+        return f"{self.fname} {self.lname}"
+    
+    @name.setter
+    def name(self, value):
+        self.fname = value.split(" ")[0]
+        self.lname = value.split(" ")[1]
+e = employee()
+e.a = 45
+
+e.name = "kriyan shah"
+print(e.fname , e.lname)
+e.show() # this will print the class attribute because class method is used
